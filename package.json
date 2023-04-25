@@ -1,0 +1,26 @@
+{
+  "name": "fidah-srv",
+  "version": "1.0.0",
+  "description": "The backend for the FoodInDaHud.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decent-man/fidah-srv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/decent-man/fidah-srv/issues"
+  },
+  "homepage": "https://github.com/decent-man/fidah-srv#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.5"
+  }
+}
