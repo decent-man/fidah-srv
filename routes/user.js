@@ -1,14 +1,9 @@
 const router = require('express').Router();
-const User = require('../model/user');
+const { createUser, signIn } = require('../controllers/user');
+const { validateUser, validate } = require('../middlewares/validator');
 
-router.post('/api/user/create',(req, res) =>{
-    const {name, email, password} = req.body;
-    const newUser = new User({
-        name,
-        email,
-        password 
-    })
-    res.send(newUser)
-})
+
+router.post('/create',validateUser, validate, createUser);
+router.post('/signIn', signIn);
 
 module.exports = router;

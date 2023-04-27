@@ -15,7 +15,7 @@ mongoose.connect(process.env.URI, {
 });
 
 app.use(express.json());
-app.use(userRouter);
+app.use('/api/user', userRouter);
 
 
 app.listen(PORT, () =>{
